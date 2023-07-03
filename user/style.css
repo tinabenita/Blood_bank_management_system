@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 25;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 160vh;
+    justify-content: center;
+    align-items: center;
+    background: url(https://t4.ftcdn.net/jpg/01/97/92/77/360_F_197927767_MISwwnukYrfEH7BoyWazNXLS2p32Plcb.jpg);
+    background-size: cover;
+}
+
+.container{
+    width: 100%;
+    max-width: 750px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 50px;
+    box-shadow: inset -2px 2px 2px rgb(241, 207, 207) ;
+    position: absolute;
+    top:0%;
+
+}
+
+.form-title{
+    font-size: 35px;
+    font-weight: 550;
+    text-align: center;
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n){
+    justify-content: end;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    padding-bottom: 15px;
+
+}
+
+.user-input-box label{
+    width: 75%;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    text-shadow: 1.5px 1.5px 1.5px black;
+    margin: 4px 0;    
+}
+
+
+.user-input-box input{
+    height: 40px;
+    width: 75%;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.gender-title{
+    width: 75%;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    text-shadow: 1.5px 1.5px 1.5px black;
+    margin: 4px 0;
+    border-bottom: 1px solid white;
+}
+
+.gender-category{
+    margin: 15px 0;
+    color: white;
+}
+
+.gender-category label{
+   padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+
+.form-submit-btn{
+    margin-top: 40px;
+}
+
+.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    border-radius: 10px;
+    color: rgb(209, 209, 209);
+    background: #022e75;
+    position: relative;
+    top: 70%;
+    right: 600%;
+}
+
+.form-submit-btn input:hover{
+    background: #022e75;
+    color: rgb(255, 255, 255);
+}
+
+
+@media(max-width: 600px){
+    .container{
+        min-width: 280px;
+    }
+
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .main-user-info{
+        max-height: 500px;
+        overflow: auto;
+    }
+
+    .main-user-info::-webkit-scrollbar{
+        width: 100;
+    }
+}
+.error{
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+  }

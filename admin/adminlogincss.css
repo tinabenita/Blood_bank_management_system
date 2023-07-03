@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 45;
+    box-sizing: border-box;
+    font-family: poppins;
+    text-decoration: none;
+}
+body{
+    margin: 9%;
+    background-color: rgb(255, 255, 255);
+    background-image: url("admin.jpg");
+    background-size: cover;
+}
+div.login-form{
+    width: 450px;
+    background-color: rgb(249, 249, 249);
+    box-shadow: 0px 5px 10px rgb(6, 28, 33);
+    position: absolute;
+    left: 40%;
+    top: 27%;
+    transform: translate(-20%,-20%);
+    
+    
+}
+div.login-form h2{
+    text-align: center;
+    background-color: rgb(13, 79, 202);
+    padding: 12px 0px;
+    margin-top: 0;
+    color: white;
+}
+div.login-form form{
+    padding: 30px 60px;
+}
+div.login-form form div.input-field{
+    display:flex;
+    flex-direction: row; 
+    margin: 10px 0px;
+}
+div.login-form form div.input-field i{
+    color: darkslategray;
+    padding: 10px 14px;
+    background-color:rgb(189, 212, 233);
+    margin-right: 4px;
+
+}
+div.login-form form div.input-field input{
+    background-color: rgb(208, 229, 249);
+    padding: 10px;
+    border: none; 
+    width: 100%;
+    padding-left: 15px;
+}
+div.login-form form div{
+    width: 100%;
+    background-color: rgb(16, 84, 157);
+    padding: 8px; 
+    border: none;
+    font-size: 18px;
+    font-weight: 1 00;
+    color:white;
+    margin: 15px 0; 
+    transition: background-color 0.4s;
+}
+div.login-form form button:hover{
+    background-color: rgb(192, 28, 66);
+    
+}
+div.login-form form div.extra{
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+div.login-form form div.extra a:first-child{
+    color: grey;
+}
+div.login-form form div.extra a:last-child{
+    color: grey;
+}div.login-form form div.extra a:first-child:hover{
+    color: rgb(10, 18, 173);
+}
+div.login-form form div.extra a:last-child:hover{
+    color: rgb(10,18,173);
+}
+.left{
+    text-decoration: none;
+    list-style: none;
+    background-color: aliceblue;
+   position: absolute;
+   top:0%;
+   left:3%;  
+}
+.error{
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+ }
+ 
