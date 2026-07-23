@@ -7,7 +7,6 @@ A web-based blood bank management platform built with PHP, allowing administrato
 This project is a full-stack blood bank management system designed to streamline blood donation operations. It provides separate interfaces for admins (to manage donors, recipients, and inventory) and users (to register, donate blood, request blood, and view announcements). The system maintains a centralized database of blood availability and helps connect donors with recipients efficiently.
 
 ### Stack
-- **Language(s):** PHP (56.6%), CSS (39.2%), Hack (4.2%)
 - **Framework / runtime:** PHP (server-side), vanilla HTML/CSS/JavaScript (client-side)
 - **Database:** MySQL
 - **Notable libraries:** Font Awesome icons, HTML5 forms, session-based authentication
@@ -47,13 +46,6 @@ Blood_bank_management_system/
 ├── logo.png                    Logo asset
 └── *.css files                 Global styles
 ```
-
-**How it fits together:**
-
-1. **Entry point:** `index.php` provides navigation to Admin Login, User Login, and static pages
-2. **Admin flow:** Admins log in via `admin/adminlogin.php` → access `admindashboard.php` → manage donors, blood inventory, recipients, and announcements
-3. **User flow:** Users register via `user/signup.php` or log in via `user/usrlogin.php` → access `userdashboard.php` → donate blood, search available blood, or request blood
-4. **Database:** MySQL database (`blood_sql`) stores user credentials, donor/recipient profiles, blood quantities, and announcements. Both `admin/` and `user/` directories contain separate `dbcon.php` files to establish MySQL connections.
 
 ## How to Run It
 
@@ -131,22 +123,3 @@ Blood_bank_management_system/
 - View blood drive announcements
 - View announcements and event details
 - Update profile information
-
-## Project Structure
-
-| Module | Purpose |
-|--------|---------|
-| Database | MySQL schema defining all tables and sample data |
-| Admin | Backend for blood bank administrators to manage inventory, users, and campaigns |
-| User | Interface for donors/recipients to register, donate, and search for blood |
-| Root files | Landing page, about us, contact, and global styling |
-
-## Try Asking
-
-- **How do I add a new blood donor to the system?** Start by logging in as admin with the default credentials, then navigate to "Add Donor" in the admin dashboard.
-- **Can users register themselves without admin approval?** Yes—users can sign up via the "New User?" link on the login page, which creates a new account in the USERS table.
-- **How are blood quantities tracked?** Each donor record stores a QUANTITY field; admins can view aggregated blood availability by type via `bloodavail.php`.
-
----
-
-**Created:** July 2023 | **Language:** PHP + MySQL | **License:** Open Source
